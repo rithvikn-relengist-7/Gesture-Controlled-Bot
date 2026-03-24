@@ -150,7 +150,7 @@ The webcam feed is horizontally flipped (`cv2.flip(frame, 1)`) to provide a mirr
 - *Payload*: A single ASCII-encoded integer string (`"0"` through `"5"`)
 - *Target*: `192.168.4.1:4210` (ESP32 SoftAP address)
 
-# Motor Control (`main.cpp`)
+# Motor Control ('main.cpp')
 
 - PWM is configured using ESP32's `ledcSetup` / `ledcAttachPin` API on channels 0 and 1 at *1 kHz, 8-bit resolution*.
 - The TB6612FNG `STBY` pin is driven `HIGH` during motion and `LOW` on stop.
