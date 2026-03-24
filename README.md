@@ -133,8 +133,6 @@ Fingers Extended - Command
 
 > All movement commands run motors at full speed (PWM duty cycle = 255/255).
 
----
-
 Technical Details
 
 # Hand Landmark Detection (`GetData.py`)
@@ -159,7 +157,6 @@ The webcam feed is horizontally flipped (`cv2.flip(frame, 1)`) to provide a mirr
 - Motor direction is determined by the `AIN1/AIN2` and `BIN1/BIN2` logic-level combinations.
 - A *100 ms delay* is applied after each command execution to debounce rapid packet bursts.
 
----
 
 Known Limitations
 
@@ -169,7 +166,6 @@ Known Limitations
 - *Lighting sensitivity* — MediaPipe hand detection performance degrades under poor or inconsistent lighting.
 - *No obstacle avoidance* — the robot has no sensors; collision prevention is entirely the operator's responsibility.
 
----
 
 Future Improvements
 
